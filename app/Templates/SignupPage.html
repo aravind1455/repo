@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="/project/Css/SignupPage.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="center">
+      <h1>Register</h1>
+      <form id="signupForm" method="post" action="/signup">
+        <div id="message">
+          {% if success_message %}
+          <p>{{ success_message }}</p>
+          {% endif %}
+        </div>
+        <span id="error">{{error_message}}</span>
+        <div class="txt_field">
+          <input type="text" name="username" id="username" placeholder="Username" required>
+          
+          <p id="usernameError" class="error"></p>
+        </div>
+        <div class="txt_field">
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          
+          <p id="emailError" class="error"></p>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="password" id="password" placeholder="Password" required>
+          
+          <p id="passwordError" class="error"></p>
+        </div>
+        <div class="txt_field">
+          <input type="password" name="confirm" id="confirm" placeholder="Confirm Password`" required>
+         
+          <p id="confirmError" class="error"></p>
+        </div>
+        <input id="button" name="submit" type="submit" value="Sign Up" onclick="validateForm()">
+        <div class="signup_link">
+          Have an Account ? <a  href="/login">Login Here</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- <script src="/project/Javascript/SignupPage.js"></script> -->
+</body>
+
+</html>

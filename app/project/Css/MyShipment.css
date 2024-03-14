@@ -1,0 +1,128 @@
+/* default styling. Nothing to do with freexing first row and column */
+main {
+  display: flex;
+}
+
+main > * {
+  border: 1px solid;
+}
+
+table {
+  font-family: helvetica;
+}
+
+td, th {
+  border: 1px solid;
+  padding: 10px;
+  min-width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  display: absolute;
+  height: 100vh;
+  background: url("/project/Images/shipment2.jpg");
+  backdrop-filter: blur(2.5px);
+  background-size: cover;
+}
+
+.table-container {
+  position: absolute;
+  max-height: 600px;
+  width: 1600px;
+  overflow: auto;
+  margin: 20px 0px 0px 400px;
+}
+#header{
+  position:sticky;
+  top:0;
+}
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /* background: rgb(255, 166, 0); */
+  color: white;
+}
+
+thead th:first-child {
+  left: 0;
+  z-index: 3;
+}
+
+tbody {
+  overflow: auto;
+  height: 200px;
+}
+
+tr > :first-child {
+  box-shadow: inset 0px 1px black;
+}
+
+/* Alternate background colors for th and tr */
+th:nth-child(even), td:nth-child(even) {
+  background-color: rgb(253, 171, 47);
+}
+
+th:nth-child(odd), td:nth-child(odd) {
+  background-color: wheat;
+}
+
+.table1 {
+  background-color: rgb(253, 171, 47);
+  height: 60px;
+  width: 1000px;
+  border-radius: 20px;
+  border:4px solid wheat;
+  text-align: center;
+  font-size: 30px;
+  margin: 300px 0px 0px 670px;
+  color:wheat;
+}
+
+#error {
+  color: red;
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: rgb(253, 171, 47);
+  position: absolute;
+  margin-left: 1040px;
+  margin-top: 250px;
+  font-size: 20px;
+}
+.icon{
+  margin-top: 10px;
+  height: 30px; 
+  margin-left: 2100px;
+}
+
+#usernameInput {
+  padding: 5px 10px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 3px; /* Rounded corners */
+  margin-left: 400px;
+  margin-top: 20px;
+}
+
+#searchButton {
+  padding: 6px 12px; /* Adjust padding as needed */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 3px; /* Rounded corners */
+  cursor: pointer; /* Cursor style */
+
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+/* Optionally, you can add some hover and focus effects for better user experience */
+#searchButton:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+#searchButton:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: 0 0 0 2px #007bff; /* Add a subtle focus border */
+}

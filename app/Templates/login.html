@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+<<<<<<< HEAD
+    <script src="../project/Javascript/log.js"></script>
+=======
+    <script src="../project/Javascript/Login.js"></script>
+>>>>>>> master1
+    <link rel="stylesheet" href="/project/Css/Login.css">
+    <title>Login Form with Captcha</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login Form</h2>
+        <div id="message">
+            {% if message %}
+                <p>{{ message }}</p>
+            {% endif %}
+        </div>
+        <span id="error"></span>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+
+            <div class="captcha-container">
+                <span id="captcha"></span>
+                <button type="button" id="generateCaptchaBtn">Generate Captcha</button>
+            </div>
+
+            <input type="text" id="userCaptcha" placeholder="Enter Captcha" required>
+            <button type="button" id="submit">Login</button>
+
+            <a href="/signup"><button type="button" id="submit1">Signup</button><br><br></a>
+            <a href="/changepassword">Forgot password??</a>
+        </form>
+    </div>
+    <script src="/project/Javascript/Login.js"></script>
+</body>
+</html>

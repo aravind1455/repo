@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url("/project/Images/login.webp");
+    align-items: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px; /* Reduced padding for more space inside the container */
+    border-radius: 10px; /* Slightly reduced border-radius */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly reduced box shadow */
+    border: 6px solid #754ef9; /* Reduced border size */
+    width: 450px; /* Reduced width for a smaller container */
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Slightly reduced margin */
+}
+
+#captcha {
+    font-size: 20px; /* Slightly reduced font size */
+    margin-right: 10px; /* Slightly reduced margin */
+}
+
+input {
+    width: 100%;
+    padding: 15px; /* Reduced padding for input elements */
+    margin-bottom: 15px; /* Reduced margin for more space between input elements */
+    box-sizing: border-box;
+    font-size: 16px; /* Slightly reduced font size */
+}
+
+button {
+    background-color: #754ef9;
+    color: white;
+    padding: 15px; /* Reduced padding for the button */
+    border: none;
+    border-radius: 5px; /* Slightly reduced border-radius */
+    cursor: pointer;
+    font-size: 16px; /* Slightly reduced font size */
+}
+
+#error {
+    color: red;
+}
+
+#message {
+    color: red;
+}
